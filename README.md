@@ -31,4 +31,22 @@ Contact agencies for existing shapefiles in the CLMPO 2022-2024 STBG/TA/CMAQ Can
 
 The previous feature created as "MTIP_Lines" is saved in C:/Users/clid1852/Documents/ArcGIS/Projects/MTIP/MTIP.gdb. The last final version of the MTIP maps are saved as "Lines200428" (last revision time April 28th, 2020) and "Points200428" in G:/projects/Transportation/MTIP/MTIP_FY21-24.gdb. 
 
+Steps to map the projects:
+
+1. [Create Feature Class](https://pro.arcgis.com/en/pro-app/help/data/feature-classes/create-a-feature-class.htm)
+
+Need to set Feature Class Name and Geometry Type.
+
+2. [Create Features](https://pro.arcgis.com/en/pro-app/help/editing/create-polyline-features.htm)
+
+Search the street name on [Google Maps](https://www.google.com/maps) and draw the lines for each line project.
+
+3. [Modify Features](https://pro.arcgis.com/en/pro-app/help/editing/introduction-to-modifying-features.htm)
+
+Select the feature, go to Edit and Modify.
+
+4. [Merge](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/merge.htm)
+
+Point projects are mapped with coordinates by adding [XY Point Data](https://pro.arcgis.com/en/pro-app/help/mapping/layer-properties/add-x-y-coordinate-data-as-a-layer.htm). Merge the new line and point projects
+
 ## Revision
