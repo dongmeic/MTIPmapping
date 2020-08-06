@@ -39,7 +39,7 @@ Need to set Feature Class Name and Geometry Type.
 
 2. [Create Features](https://pro.arcgis.com/en/pro-app/help/editing/create-polyline-features.htm)
 
-Search the street name on [Google Maps](https://www.google.com/maps) and draw the lines for each line project.
+Search the street name on [Google Maps](https://www.google.com/maps) and draw the lines for each line project in the new feature class.
 
 3. [Modify Features](https://pro.arcgis.com/en/pro-app/help/editing/introduction-to-modifying-features.htm)
 
@@ -47,6 +47,6 @@ Select the feature, go to Edit and Modify.
 
 4. [Merge](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/merge.htm)
 
-Point projects are mapped with coordinates by adding [XY Point Data](https://pro.arcgis.com/en/pro-app/help/mapping/layer-properties/add-x-y-coordinate-data-as-a-layer.htm). Merge the new line and point projects
+Point projects are mapped with coordinates by adding [XY Point Data](https://pro.arcgis.com/en/pro-app/help/mapping/layer-properties/add-x-y-coordinate-data-as-a-layer.htm)(go to Map --> Add Data --> XY Point Data). [Add Attribute Index](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-attribute-index.htm) to join tables of newly created line feature and the CSV table that lists the project items. Merge the new line and point projects with previous projects.
 
 ## Revision
