@@ -16,7 +16,8 @@ The new 21 projects on June 2020 need to be added.
 ## Collect spatial information
 
 Spatial information can be found on [this document](https://www.lcog.org/AgendaCenter/ViewFile/Item/3168?fileID=11682). 
-Contact agencies for CLMPO 2022-2024 STBG/TA/CMAQ Candidate Project Summary.
+Contact agencies for existing shapefiles in the CLMPO 2022-2024 STBG/TA/CMAQ Candidate Project Summary. Identify spatial projects and add coordinates. 
+Review the mapped and revised projects.
 
 ## Map the projects
 
