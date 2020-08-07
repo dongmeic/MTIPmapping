@@ -70,6 +70,23 @@ names(MTIP_points) <- c("Owner", "Longitude", "Latitude", "Line", "MTIP_ID", "Pr
                         "T_All_Fund") 
 writeOGR(MTIP_points, dsn = outpath, layer = "MTIP_Points", driver = "ESRI Shapefile", overwrite_layer = TRUE) 
 
+# reorganize the field names for output again
+inpath <- "//clsrv111/transpor/MPO/TIP/TIP FY21-24/MAPS/MTIP21_24.gdb"
+outpath <- "C:/Users/clid1852/OneDrive - lanecouncilofgovernments/data/MTIP"
+MTIP_lines <- readOGR(inpath, "Lines200806")
+names(MTIP_lines) <- c("Applicant", "Longitude", "Latitude", "Line", "MTIP_ID", "Proj_Name",                
+                       "STIP_Key", "Fiscal_Yrs", "Fed_Fund", "Fed_Source",     
+                       "Fed_Req_Ma", "Other_Fund", "OF_Source", "T_All_Fund", "Shp_Length")
+writeOGR(MTIP_lines, dsn = outpath, layer = "MTIP_Lines", driver = "ESRI Shapefile", 
+         overwrite_layer = TRUE) 
+
+MTIP_points <- readOGR(inpath, "Points200806")
+names(MTIP_points) <- c("Applicant", "Longitude", "Latitude", "Line", "MTIP_ID", "Proj_Name",                
+                        "STIP_Key", "Fiscal_Yrs", "Fed_Fund", "Fed_Source",     
+                        "Fed_Req_Ma", "Other_Fund", "OF_Source", "T_All_Fund") 
+writeOGR(MTIP_points, dsn = outpath, layer = "MTIP_Points", driver = "ESRI Shapefile", 
+         overwrite_layer = TRUE) 
+
 
 
 
