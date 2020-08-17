@@ -56,3 +56,11 @@ Compress the shapefile and upload to the map. [Configure](https://doc.arcgis.com
 
 
 ## Revision
+Added new projects in August, 2020.
+
+# Story map
+## Organize tables
+
+## Tableau 
+
+## ArcGIS Online
