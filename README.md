@@ -47,7 +47,7 @@ Select the feature, go to Edit and Modify.
 
 4. [Merge](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/merge.htm)
 
-Point projects are mapped with coordinates by adding [XY Point Data](https://pro.arcgis.com/en/pro-app/help/mapping/layer-properties/add-x-y-coordinate-data-as-a-layer.htm)(go to Map --> Add Data --> XY Point Data). [Add Attribute Index](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-attribute-index.htm) to join tables of newly created line feature and the CSV table that lists the project items. Merge the new line and point projects with previous projects. Change the variable names due to the length limit (10 characters).
+Point projects are mapped with coordinates by adding [XY Point Data](https://pro.arcgis.com/en/pro-app/help/mapping/layer-properties/add-x-y-coordinate-data-as-a-layer.htm)(go to Map --> Add Data --> XY Point Data). [Add Attribute Index](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-attribute-index.htm) to join tables of newly created line feature and the CSV table that lists the project items using MTIP ID (since STIP key is not complete). Merge the new line and point projects with previous projects. Change the variable names due to the length limit (10 characters).
 
 5. [ArcGIS Online](https://arcg.is/OuiCW)
 
