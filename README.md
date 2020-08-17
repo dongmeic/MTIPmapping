@@ -51,7 +51,7 @@ Point projects are mapped with coordinates by adding [XY Point Data](https://pro
 
 5. [ArcGIS Online](https://arcg.is/OuiCW)
 
-Compress the shapefile and upload to the map. 
+Compress the shapefile and upload to the map. [Configure](https://doc.arcgis.com/en/arcgis-online/create-maps/configure-pop-ups.htm) the pop-ups. 
 
 
 
