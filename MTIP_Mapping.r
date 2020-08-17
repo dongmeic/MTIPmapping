@@ -88,5 +88,20 @@ writeOGR(MTIP_points, dsn = outpath, layer = "MTIP_Points", driver = "ESRI Shape
          overwrite_layer = TRUE) 
 
 
+# add project description
+inpath <- "C:/Users/clid1852/OneDrive - lanecouncilofgovernments/MTIP/"
+outpath <- "C:/Users/clid1852/OneDrive - lanecouncilofgovernments/data/MTIP"
+tb <- read.csv(paste0(inpath, "MTIP_project_description.csv"))
+tb <- unique(tb)
+colnames(tb) <- c('MTIP_ID','Proj_Desc')
+MTIP_lines <- readOGR(outpath, "MTIP_Lines")
+MTIP_lines <- merge(MTIP_lines, tb, by='MTIP_ID')
+writeOGR(MTIP_lines, dsn = outpath, layer = "MTIP_Lines", driver = "ESRI Shapefile", 
+         overwrite_layer = TRUE) 
+
+MTIP_points <- readOGR(outpath, "MTIP_Points")
+MTIP_points <- merge(MTIP_points, tb, by='MTIP_ID')
+writeOGR(MTIP_points, dsn = outpath, layer = "MTIP_Points", driver = "ESRI Shapefile", 
+         overwrite_layer = TRUE)
 
 
