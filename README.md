@@ -61,6 +61,10 @@ Added new projects in August, 2020.
 # Story map
 ## Organize tables
 
+The databased is organized by removing the summary rows from the original tables and combing the projects from different time periods. Some projects have been updated with new data. 
+
 ## Tableau 
+
+The tableau dashboard includes a bar chart and a map showing project introduciton and funding information. The chart and map use different data sources since the map only shows the summary information while the chart covers data from different phases. As such, they cannot be linked using actions in the dashboard. To overlap the line and point features, spatial join is applied between the two shapefiles and dual axis is set for the points. 
 
 ## ArcGIS Online
