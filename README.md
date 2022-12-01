@@ -12,7 +12,9 @@ To organize data for MTIP mapping
 # Steps for FY 24-27
 ## Review projects with location info
 
-The ODOT project tracker mapped MTIP projects in Lane [here](https://gis.odot.state.or.us/tpt/projects?county=Lane&mapped=TRUE).The map is available [here](https://gis.odot.state.or.us/arcgis1006/rest/services/tpt/tpt_display/MapServer/).
+The ODOT project tracker mapped MTIP projects in Lane [here](https://gis.odot.state.or.us/tpt/projects?county=Lane&mapped=TRUE).The map is available [here](https://gis.odot.state.or.us/arcgis1006/rest/services/tpt/tpt_display/MapServer/). However, the json file missed spatial data and can't be converted to GIS data. As such, the shapefiles were transferred from ODOT.
+
+The draft data table is reorganized to a machine-readable format following the steps: 1) add a column "Geo" to reorganize the location information on the rows; 2) remove the extra rows with field names when combining the separated tables; 3) remove the "Merge & Center" and "Wrap Text" formats; 4) remove the "Total" rows; 5) delete "Total All Sources" column; 6) separate funding and source on the fields; 7) clean all the font and cell formats.
 
 # Steps for FY 21-24
 ## Review existing data
