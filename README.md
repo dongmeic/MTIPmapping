@@ -14,7 +14,9 @@ To organize data for MTIP mapping
 
 The ODOT project tracker mapped MTIP projects in Lane [here](https://gis.odot.state.or.us/tpt/projects?county=Lane&mapped=TRUE).The map is available [here](https://gis.odot.state.or.us/arcgis1006/rest/services/tpt/tpt_display/MapServer/). However, the json file missed spatial data and can't be converted to GIS data. As such, the shapefiles were transferred from ODOT.
 
-The draft data table is reorganized to a machine-readable format following the steps: 1) add a column "Geo" to reorganize the location information on the rows; 2) remove the extra rows with field names when combining the separated tables; 3) remove the "Merge & Center" and "Wrap Text" formats; 4) remove the "Total" rows; 5) delete "Total All Sources" column; 6) separate funding and source on the fields; 7) clean all the font and cell formats.
+The draft data table is reorganized to a machine-readable format following the steps: 1) add a column "Geo" to reorganize the location information on the rows; 2) remove the extra rows with field names when combining the separated tables; 3) remove the "Merge & Center" and "Wrap Text" formats; 4) remove the "Total" rows; 5) separate funding and source on the fields; 6) clean all the font and cell formats. When the final data table is available, simply remove all the extra rows (geo info and field names) and columns (total and blank), add field names, and merge the first edited table to get the geo info.
+
+After matching the STIP Key from the LCOG data table with the STIP_LOC_ID from ODOT spatial data, the matched IDs are outside of the central Lane. The next step is to review the project details to get the location info and match the projects geographically in ArcGIS Pro.
 
 # Steps for FY 21-24
 ## Review existing data
@@ -25,7 +27,7 @@ The new 21 projects on June 2020 need to be added in August 2020.
 
 ## Collect spatial information
 
-Spatial information can be found on [this document](https://www.lcog.org/AgendaCenter/ViewFile/Item/3168?fileID=11682).
+<!-- Spatial information can be found on [this document](https://www.lcog.org/AgendaCenter/ViewFile/Item/3168?fileID=11682). -->
 Contact agencies for existing shapefiles in the CLMPO 2022-2024 STBG/TA/CMAQ Candidate Project Summary, particularly for the below three projects. Identify whether spatial projects are lines and add coordinates to all spatial projects. Review the mapped and revised projects in ArcGIS Pro.
 
 1. [Division Ave Roundabouts](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:a0a1af2a-bc26-4e80-be89-10fb28bc4ebf) - Dan updated the map
