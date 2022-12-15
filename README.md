@@ -12,11 +12,13 @@ To organize data for MTIP mapping
 # Steps for FY 24-27
 ## Review projects with location info
 
-The ODOT project tracker mapped MTIP projects in Lane [here](https://gis.odot.state.or.us/tpt/projects?county=Lane&mapped=TRUE).The map is available [here](https://gis.odot.state.or.us/arcgis1006/rest/services/tpt/tpt_display/MapServer/). However, the json file [missed spatial data](https://github.com/dongmeic/MTIPmapping/blob/master/get_project_tracker_data.ipynb) and can't be converted to GIS data. As such, the shapefiles were transferred from ODOT.
+The ODOT project tracker mapped MTIP projects in Lane [here](https://gis.odot.state.or.us/tpt/projects?county=Lane&mapped=TRUE).The map is available [here](https://gis.odot.state.or.us/arcgis1006/rest/services/tpt/tpt_display/MapServer/). However, the json file [missed spatial data](https://github.com/dongmeic/MTIPmapping/blob/master/1_get_project_tracker_data.ipynb) and can't be converted to GIS data. As such, the shapefiles were transferred from ODOT.
 
 The draft data table is reorganized to a machine-readable format following the steps: 1) add a column "Geo" to reorganize the location information on the rows; 2) remove the extra rows with field names when combining the separated tables; 3) remove the "Merge & Center" and "Wrap Text" formats; 4) remove the "Total" rows; 5) separate funding and source on the fields; 6) clean all the font and cell formats. When the final data table is available, simply remove all the extra rows (geo info and field names) and columns (total and blank), add field names, and merge the first edited table to get the geo info.
 
-To review or create spatial data, the first step is to match FME_PROJ_KEY_NO with STIP Key to get the existing spatial data. The next step is to review the project details in *T:\MPO\TIP\Calls For Projects\Call for Projects 25-27\Apps Received\Word Versions* to get the location info and match the projects geographically in ArcGIS Pro. I [reviewed](https://github.com/dongmeic/MTIPmapping/blob/master/review_project_data.ipynb) separately the mapped and unmapped projects in ArcGIS Pro and added notes on feature type, location file path, and clarification needed. Then I followed up for further clarification on data and project info. Review again after the confirmation on unclear projects and combine all mapped data. 
+To review or create spatial data, the first step is to match FME_PROJ_KEY_NO with STIP Key to get the existing spatial data. The next step is to review the project details in *T:\MPO\TIP\Calls For Projects\Call for Projects 25-27\Apps Received\Word Versions* to get the location info and match the projects geographically in ArcGIS Pro. I [reviewed](https://github.com/dongmeic/MTIPmapping/blob/master/2_review_project_data.ipynb) separately the mapped and unmapped projects in ArcGIS Pro and added notes on feature type, location file path, and clarification needed. Then I followed up for further clarification on data and project info. Review again after the confirmation on unclear projects and [combine all mapped data](https://github.com/dongmeic/MTIPmapping/blob/master/3_combine_all_mapped_data.ipynb).
+
+The original table is revised following the notes in T:\MPO\TIP\TIP FY24-27\Maps\Notes.txt.
 
 # Steps for FY 21-24
 ## Review existing data
@@ -61,8 +63,6 @@ Point projects are mapped with coordinates by adding [XY Point Data](https://pro
 5. [ArcGIS Online](https://arcg.is/OuiCW)
 
 Compress the shapefile and upload to the map. [Configure](https://doc.arcgis.com/en/arcgis-online/create-maps/configure-pop-ups.htm) the pop-ups.
-
-
 
 ## Revision
 Added new projects in August, 2020.
