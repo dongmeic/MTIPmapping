@@ -18,7 +18,7 @@ The draft data table is reorganized to a machine-readable format following the s
 
 To review or create spatial data, the first step is to match FME_PROJ_KEY_NO with STIP Key to get the existing spatial data. The next step is to review the project details in *T:\MPO\TIP\Calls For Projects\Call for Projects 25-27\Apps Received\Word Versions* to get the location info and match the projects geographically in ArcGIS Pro. I [reviewed](https://github.com/dongmeic/MTIPmapping/blob/master/2_review_project_data.ipynb) separately the mapped and unmapped projects in ArcGIS Pro and added notes on feature type, location file path, and clarification needed. Then I followed up for further clarification on data and project info. Review again after the confirmation on unclear projects and [combine all mapped data](https://github.com/dongmeic/MTIPmapping/blob/master/3_combine_all_mapped_data.ipynb).
 
-The original table is revised following the notes in T:\MPO\TIP\TIP FY24-27\Maps\Notes.txt.
+The original table is [revised](https://github.com/dongmeic/MTIPmapping/blob/master/4_revise_data_table.ipynb) following the notes in T:\MPO\TIP\TIP FY24-27\Maps\Notes.txt.
 
 # Steps for FY 21-24
 ## Review existing data
